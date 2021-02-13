@@ -1,0 +1,13 @@
+Package: BensThemes
+Type: Package
+Title: ggplot2 custom themes.
+Version: 0.1.0
+Authors@R: person("Benjamin", "Chaffe", email = "benchaffebusiness@gmail.com",
+  role = c("aut", "cre"))
+Description: A package that contains custom themes for ggplot2 graphs.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    ggplot2,
+    extrafont
