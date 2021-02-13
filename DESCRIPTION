@@ -1,7 +1,7 @@
 Package: BensThemes
 Type: Package
 Title: ggplot2 custom themes.
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Benjamin", "Chaffe", email = "benchaffebusiness@gmail.com",
   role = c("aut", "cre"))
 Description: A package that contains custom themes for ggplot2 graphs.
