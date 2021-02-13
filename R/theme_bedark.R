@@ -11,7 +11,7 @@ theme_bedark <- function() {
     plot.subtitle = element_text(family = "Verdana Pro Light", size = 14, color = "white"),
     plot.margin = margin(t = 15, r = 15, l = 15, b = 15),
     panel.background = element_rect(fill = "black"),
-    panel.grid.major = element_line(colour = "white"),
+    panel.grid.major = element_line(colour = rgb(255, 255, 255, maxColorValue = 255, alpha = 100)),
     panel.grid.minor = element_blank(),
     legend.position = "bottom",
     legend.background = element_rect(fill = "black"),
