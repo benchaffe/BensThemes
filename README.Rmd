@@ -41,6 +41,9 @@ library(BensThemes)
 library(extrafont)
 ```
 
+
+Note: all themes have the option `axisLabels = FALSE` by default. Simply set to true like the examples above to see them.
+
 ### Light Gray Theme
 
 ```{r lg}
@@ -49,7 +52,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data", 
        subtitle = "An example subtitle", 
        caption = "BensThemes") +
-  theme_belightgray()
+  theme_belightgray(axisLabels = TRUE)
 ```
 
 ### Dark Theme
@@ -60,7 +63,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedark()
+  theme_bedark(axisLabels = TRUE)
 ```
 
 ### Dark-ish Theme
@@ -71,5 +74,5 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedarkish()
+  theme_bedarkish(axisLabels = TRUE)
 ```

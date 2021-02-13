@@ -36,6 +36,9 @@ loadfonts(device = "win")
 
 ## Examples
 
+Note: all themes have the option `axisLabels = FALSE` by default. Simply
+set to true like the examples above to see them.
+
 ### Light Gray Theme
 
 ``` r
@@ -44,7 +47,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data", 
        subtitle = "An example subtitle", 
        caption = "BensThemes") +
-  theme_belightgray()
+  theme_belightgray(axisLabels = TRUE)
 ```
 
 ![](README_files/figure-gfm/lg-1.png)<!-- -->
@@ -57,7 +60,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedark()
+  theme_bedark(axisLabels = TRUE)
 ```
 
 ![](README_files/figure-gfm/d-1.png)<!-- -->
@@ -70,7 +73,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedarkish()
+  theme_bedarkish(axisLabels = TRUE)
 ```
 
 ![](README_files/figure-gfm/di-1.png)<!-- -->

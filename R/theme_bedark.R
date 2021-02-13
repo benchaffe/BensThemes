@@ -4,7 +4,7 @@
 # Modern Plot theme with no axis labels and a black background.
 # To add axis labels back simply alter theme(axis.title.x/y)
 
-theme_bedark <- function() {
+theme_bedark <- function(axisLabels = FALSE) {
   theme(
     plot.background = element_rect(fill = "black"),
     plot.title = element_text(family = "Verdana Pro", size = 18, color = "white"),
@@ -17,8 +17,13 @@ theme_bedark <- function() {
     legend.background = element_rect(fill = "black"),
     legend.text = element_text(family = "Verdana Pro", color = "white"),
     axis.text = element_text(family = "Verdana Pro", color = "white"),
-    axis.title.y = element_blank(),
-    axis.title.x = element_blank(),
     text = element_text(family = "Verdana Pro Light", color = "white")
-  )
+  ) +
+    if (axisLabels) {
+      theme(axis.title.y = element_text(hjust = 0.95),
+            axis.title.x = element_text(hjust = 0.95))
+    } else {
+      theme(axis.title.y = element_blank(),
+            axis.title.x = element_blank(),)
+    }
 }
