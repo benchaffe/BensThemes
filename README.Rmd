@@ -29,8 +29,11 @@ loadfonts(device = "win")
 ## Themes
 
 - ```theme_belightgray``` A modern light gray theme.
+- ```theme_bewhite``` A modern white theme.
+- ```theme_beblue``` A modern blue theme.
 - ```theme_bedark``` A modern dark theme.
 - ```theme_bedarkish``` This is a lighter dark theme.
+- ```theme_beretro``` A retro theme.
 
 ## Examples
 
@@ -42,7 +45,7 @@ library(extrafont)
 ```
 
 
-Note: all themes have the option `axisLabels = FALSE` by default. Simply set to true like the examples above to see them.
+Note: all themes have the option `axisLabels = TRUE` by default. Simply set to false to hide axis labels.
 
 ### Light Gray Theme
 
@@ -52,7 +55,29 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data", 
        subtitle = "An example subtitle", 
        caption = "BensThemes") +
-  theme_belightgray(axisLabels = TRUE)
+  theme_belightgray()
+```
+
+### White Theme
+
+```{r w}
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point() +
+  labs(title = "Scatterplot of mtcars data", 
+       subtitle = "An example subtitle", 
+       caption = "BensThemes") +
+  theme_bewhite()
+```
+
+### Blue Theme
+
+```{r b}
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point(color = "white") +
+  labs(title = "Scatterplot of mtcars data", 
+       subtitle = "An example subtitle", 
+       caption = "BensThemes") +
+  theme_beblue()
 ```
 
 ### Dark Theme
@@ -63,7 +88,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedark(axisLabels = TRUE)
+  theme_bedark()
 ```
 
 ### Dark-ish Theme
@@ -74,5 +99,16 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedarkish(axisLabels = TRUE)
+  theme_bedarkish()
+```
+
+### Retro Theme
+
+```{r ret}
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point() +
+  labs(title = "Scatterplot of mtcars data",
+       subtitle = "An example subtitle",
+       caption = "BensThemes") +
+  theme_beretro()
 ```

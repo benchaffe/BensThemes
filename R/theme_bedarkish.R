@@ -5,7 +5,7 @@
 # A variation of the dark theme for ggplot2
 # This theme is less black compared to the dark theme.
 
-theme_bedarkish <- function(axisLabels = FALSE) {
+theme_bedarkish <- function(axisLabels = TRUE) {
   theme(
     plot.background = element_rect(fill = rgb(37, 42, 51, maxColorValue = 255, alpha = 255)),
     plot.title = element_text(family = "Verdana Pro", size = 18, color = "white"),

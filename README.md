@@ -31,13 +31,16 @@ loadfonts(device = "win")
 ## Themes
 
 -   `theme_belightgray` A modern light gray theme.
+-   `theme_bewhite` A modern white theme.
+-   `theme_beblue` A modern blue theme.
 -   `theme_bedark` A modern dark theme.
 -   `theme_bedarkish` This is a lighter dark theme.
+-   `theme_beretro` A retro theme.
 
 ## Examples
 
-Note: all themes have the option `axisLabels = FALSE` by default. Simply
-set to true like the examples above to see them.
+Note: all themes have the option `axisLabels = TRUE` by default. Simply
+set to false to hide axis labels.
 
 ### Light Gray Theme
 
@@ -47,10 +50,36 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data", 
        subtitle = "An example subtitle", 
        caption = "BensThemes") +
-  theme_belightgray(axisLabels = TRUE)
+  theme_belightgray()
 ```
 
 ![](README_files/figure-gfm/lg-1.png)<!-- -->
+
+### White Theme
+
+``` r
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point() +
+  labs(title = "Scatterplot of mtcars data", 
+       subtitle = "An example subtitle", 
+       caption = "BensThemes") +
+  theme_bewhite()
+```
+
+![](README_files/figure-gfm/w-1.png)<!-- -->
+
+### Blue Theme
+
+``` r
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point(color = "white") +
+  labs(title = "Scatterplot of mtcars data", 
+       subtitle = "An example subtitle", 
+       caption = "BensThemes") +
+  theme_beblue()
+```
+
+![](README_files/figure-gfm/b-1.png)<!-- -->
 
 ### Dark Theme
 
@@ -60,7 +89,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedark(axisLabels = TRUE)
+  theme_bedark()
 ```
 
 ![](README_files/figure-gfm/d-1.png)<!-- -->
@@ -73,7 +102,20 @@ ggplot(mtcars, aes(mpg, wt)) +
   labs(title = "Scatterplot of mtcars data",
        subtitle = "An example subtitle",
        caption = "BensThemes") +
-  theme_bedarkish(axisLabels = TRUE)
+  theme_bedarkish()
 ```
 
 ![](README_files/figure-gfm/di-1.png)<!-- -->
+
+### Retro Theme
+
+``` r
+ggplot(mtcars, aes(mpg, wt)) +
+  geom_point() +
+  labs(title = "Scatterplot of mtcars data",
+       subtitle = "An example subtitle",
+       caption = "BensThemes") +
+  theme_beretro()
+```
+
+![](README_files/figure-gfm/ret-1.png)<!-- -->

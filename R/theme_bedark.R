@@ -1,10 +1,9 @@
 # Dark Theme
 #
 #
-# Modern Plot theme with no axis labels and a black background.
-# To add axis labels back simply alter theme(axis.title.x/y)
+# Modern Plot theme with a black background.
 
-theme_bedark <- function(axisLabels = FALSE) {
+theme_bedark <- function(axisLabels = TRUE) {
   theme(
     plot.background = element_rect(fill = "black"),
     plot.title = element_text(family = "Verdana Pro", size = 18, color = "white"),

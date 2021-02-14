@@ -1,10 +1,9 @@
 # Light Gray Theme
 #
 #
-# Modern Plot theme with no axis labels and a light gray background.
-# To add axis labels back simply alter theme(axis.title.x/y)
+# Modern Plot theme with a light gray background.
 
-theme_belightgray <- function(axisLabels = FALSE) {
+theme_belightgray <- function(axisLabels = TRUE) {
   theme(
     plot.background = element_rect(fill = rgb(240, 240, 240, maxColorValue = 255, alpha = 255)),
     plot.title = element_text(family = "Verdana Pro", size = 18),
